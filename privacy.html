@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Try-On Twin</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #008060;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 30px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        a {
+            color: #008060;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: <span id="last-updated-date"></span></p>
+
+        <h2>1. Introduction</h2>
+        <p>
+            Try-On Twin ("we," "our," or "us") is a Shopify application that provides virtual try-on functionality for apparel stores. 
+            This Privacy Policy explains how we collect, use, store, and protect personal information when you use our application.
+        </p>
+        <p>
+            By using Try-On Twin, you agree to the collection and use of information in accordance with this policy. 
+            If you do not agree with our policies and practices, please do not use our application.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        
+        <h3>2.1 Information from Store Owners (Merchants)</h3>
+        <p>When you install and use Try-On Twin in your Shopify store, we collect:</p>
+        <ul>
+            <li><strong>Shop Information:</strong> Your shop domain, shop name, and Shopify account details</li>
+            <li><strong>Subscription Data:</strong> Subscription tier, billing information, usage statistics, and trial status</li>
+            <li><strong>Product Settings:</strong> Information about which products and collections have try-on enabled</li>
+            <li><strong>Onboarding Status:</strong> Progress through the app setup process</li>
+            <li><strong>Session Data:</strong> Authentication tokens and session information required for app functionality</li>
+        </ul>
+
+        <h3>2.2 Information from Store Customers</h3>
+        <p>When customers use the try-on feature on your storefront, we collect:</p>
+        <ul>
+            <li><strong>User Photos:</strong> Full body and top half photos uploaded by customers for virtual try-on purposes</li>
+            <li><strong>Try-On Results:</strong> Generated images showing products on the customer</li>
+            <li><strong>Customer Identifiers:</strong> Shopify customer ID (if logged in) or guest session ID (if browsing as guest)</li>
+            <li><strong>Product Information:</strong> Product IDs, titles, handles, variant information, and product images used for try-on</li>
+            <li><strong>Usage Data:</strong> Try-on requests, timestamps, and user feedback</li>
+            <li><strong>Technical Data:</strong> User agent strings and browser information (for compatibility and debugging purposes)</li>
+            <li><strong>Activity Tracking:</strong> Timestamps of user activity to manage data retention</li>
+        </ul>
+
+        <h3>2.3 Automatically Collected Information</h3>
+        <p>We automatically collect certain technical information, including:</p>
+        <ul>
+            <li>Error logs and diagnostic information (via Sentry, with sensitive data removed)</li>
+            <li>Usage analytics and performance metrics</li>
+            <li>System logs and debugging information</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+            <li><strong>Service Delivery:</strong> To provide virtual try-on functionality and process customer requests</li>
+            <li><strong>Image Processing:</strong> To generate try-on results by combining customer photos with product images</li>
+            <li><strong>Account Management:</strong> To manage your subscription, track usage, and provide billing services</li>
+            <li><strong>App Functionality:</strong> To enable product-specific try-on settings and store configuration</li>
+            <li><strong>Customer Support:</strong> To respond to your inquiries and provide technical support</li>
+            <li><strong>Error Monitoring:</strong> To identify and fix technical issues (using Sentry, with sensitive data removed)</li>
+            <li><strong>Analytics:</strong> To track conversion rates and analyze app performance</li>
+            <li><strong>Compliance:</strong> To comply with legal obligations and enforce our terms of service</li>
+        </ul>
+
+        <h2>4. Data Storage and Security</h2>
+        
+        <h3>4.1 Storage Locations</h3>
+        <p>Your data is stored using the following services:</p>
+        <ul>
+            <li><strong>PostgreSQL Database:</strong> Metadata, customer identifiers, product settings, and usage data</li>
+            <li><strong>Vercel Blob Storage:</strong> User photos and try-on result images</li>
+            <li><strong>Sentry:</strong> Error logs and diagnostic information (with sensitive data removed)</li>
+        </ul>
+
+        <h3>4.2 Security Measures</h3>
+        <p>We implement appropriate technical and organizational security measures to protect your data, including:</p>
+        <ul>
+            <li>Encryption of data in transit using HTTPS/TLS</li>
+            <li>Secure authentication and access controls</li>
+            <li>Regular security assessments and updates</li>
+            <li>Limited access to personal data on a need-to-know basis</li>
+            <li>Automatic removal of sensitive data from error logs</li>
+        </ul>
+
+        <h2>5. Data Retention</h2>
+        <p>We retain your information for the following periods:</p>
+        <ul>
+            <li><strong>User Photos:</strong> Retained for 60 days after the customer's last activity, then automatically deleted</li>
+            <li><strong>Try-On Results:</strong> Retained for 30 days from creation, then automatically deleted</li>
+            <li><strong>Customer Identifiers and Activity Data:</strong> Retained for 60 days after last activity, then automatically deleted</li>
+            <li><strong>Store Owner Data:</strong> Retained for as long as your subscription is active and for a reasonable period thereafter for legal and accounting purposes</li>
+            <li><strong>Error Logs:</strong> Retained according to Sentry's retention policies (typically 90 days)</li>
+        </ul>
+        <p>
+            When you uninstall the app, we will delete your store's data within 30 days, except where we are required to retain 
+            certain information for legal or accounting purposes.
+        </p>
+
+        <h2>6. Data Sharing and Third-Party Services</h2>
+        
+        <h3>6.1 Third-Party Service Providers</h3>
+        <p>We use the following third-party services that may process your data:</p>
+        <ul>
+            <li><strong>Vercel:</strong> For hosting, image storage (Vercel Blob), and infrastructure services</li>
+            <li><strong>Sentry:</strong> For error monitoring and diagnostic services (sensitive data is removed before transmission)</li>
+            <li><strong>Google Generative AI:</strong> For processing try-on image generation (images are processed but not stored by Google)</li>
+            <li><strong>Shopify:</strong> For app platform services, authentication, and data access through Shopify APIs</li>
+        </ul>
+        <p>
+            These service providers are contractually obligated to protect your data and use it only for the purposes we specify.
+        </p>
+
+        <h3>6.2 Data Sharing</h3>
+        <p>We do not sell, rent, or trade your personal information. We may share your information only in the following circumstances:</p>
+        <ul>
+            <li>With your explicit consent</li>
+            <li>To comply with legal obligations or respond to lawful requests</li>
+            <li>To protect our rights, privacy, safety, or property</li>
+            <li>In connection with a business transfer (merger, acquisition, etc.)</li>
+            <li>With service providers who assist us in operating the app (as described above)</li>
+        </ul>
+
+        <h2>7. Your Rights and Choices</h2>
+        <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+        <ul>
+            <li><strong>Access:</strong> Request access to the personal information we hold about you</li>
+            <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+            <li><strong>Deletion:</strong> Request deletion of your personal information (subject to legal retention requirements)</li>
+            <li><strong>Portability:</strong> Request a copy of your data in a portable format</li>
+            <li><strong>Objection:</strong> Object to certain processing of your personal information</li>
+            <li><strong>Withdrawal of Consent:</strong> Withdraw consent where processing is based on consent</li>
+        </ul>
+        <p>
+            To exercise these rights, please contact us using the information provided in the "Contact Us" section below.
+        </p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>
+            Try-On Twin is not intended for use by children under the age of 13 (or the applicable age in your jurisdiction). 
+            We do not knowingly collect personal information from children. If you believe we have collected information from a child, 
+            please contact us immediately.
+        </p>
+
+        <h2>9. International Data Transfers</h2>
+        <p>
+            Your information may be transferred to and processed in countries other than your country of residence. 
+            These countries may have data protection laws that differ from those in your country. We take appropriate safeguards 
+            to ensure that your data receives adequate protection, including through contractual agreements with our service providers.
+        </p>
+
+        <h2>10. Cookies and Tracking Technologies</h2>
+        <p>
+            We use cookies and similar tracking technologies to maintain user sessions, track activity, and improve app functionality. 
+            We do not use cookies for advertising or third-party tracking purposes. You can control cookies through your browser settings, 
+            though this may affect app functionality.
+        </p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, 
+            or regulatory reasons. We will notify you of any material changes by posting the new Privacy Policy on this page and 
+            updating the "Last Updated" date. We encourage you to review this Privacy Policy periodically.
+        </p>
+
+        <h2>12. Compliance with Regulations</h2>
+        <p>
+            We are committed to complying with applicable data protection laws, including:
+        </p>
+        <ul>
+            <li>General Data Protection Regulation (GDPR) for users in the European Economic Area</li>
+            <li>California Consumer Privacy Act (CCPA) for users in California</li>
+            <li>Personal Information Protection and Electronic Documents Act (PIPEDA) for users in Canada</li>
+            <li>Other applicable privacy laws in your jurisdiction</li>
+        </ul>
+
+        <h2>13. Contact Us</h2>
+        <div class="contact-info">
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:privacy@tryontwin.com">privacy@tryontwin.com</a><br>
+                <strong>App Name:</strong> Try-On Twin<br>
+                <strong>Platform:</strong> Shopify App Store
+            </p>
+            <p>
+                For Shopify-specific privacy inquiries, you may also contact Shopify's Privacy Officer at 
+                <a href="https://www.shopify.com/legal/privacy" target="_blank" rel="noopener noreferrer">privacy@shopify.com</a>.
+            </p>
+        </div>
+
+        <h2>14. Shopify's Role</h2>
+        <p>
+            Try-On Twin is a third-party application available through the Shopify App Store. Shopify acts as a platform provider 
+            and may collect certain information in connection with your use of the Shopify platform. For information about 
+            Shopify's data practices, please review 
+            <a href="https://www.shopify.com/legal/privacy" target="_blank" rel="noopener noreferrer">Shopify's Privacy Policy</a>.
+        </p>
+        <p>
+            This Privacy Policy applies only to Try-On Twin's collection and use of your information. We are not responsible for 
+            Shopify's privacy practices or the privacy practices of other third-party services you may use in connection with your store.
+        </p>
+    </div>
+
+    <script>
+        // Set the last updated date
+        document.getElementById('last-updated-date').textContent = new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+    </script>
+</body>
+</html>
